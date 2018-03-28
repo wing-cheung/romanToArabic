@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="script.js"></script>
+    <title>RomanToArabic</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Roman to arabic converter</h1>
+      <section>
+        <table>
+          <tr class="romanNumerals">
+            <td>M</td>
+            <td>D</td>
+            <td>C</td>
+            <td>L</td>
+            <td>X</td>
+            <td>V</td>
+            <td>I</td>
+          </tr>
+          <tr class="arabicNumbers">
+            <td>1000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>50</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </section>
+      <section class="converter">
+        <div class="romanNumeral">
+          <label for="RomanNumeral">Roman Numeral</label>
+          <input type="text" id="romanNumeral" oninput="convertRomanToArabic()" onfocus="emptyInput(this)"/>
+        </div>
+        <div class="arabicNumber">
+          <label for="ArabicNumber">Arabic Number</label>
+          <span id="arabicNumber"></span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
