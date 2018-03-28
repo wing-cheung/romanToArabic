@@ -1,0 +1,83 @@
+body {
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: #00a;
+}
+
+.converter {
+  width: auto;
+  border: 1px solid #aaf;
+  background: #fafafa;
+  display: inline-block;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.converter div {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+}
+
+#arabicNumber {
+  display: block;
+  width: 180px;
+  min-height: 20px;
+  height: auto;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #efeeff;
+}
+
+tr {
+  text-align: center;
+}
+
+td {
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  padding: 2px 4px;
+}
+
+.romanNumerals {
+  font-weight: bold;
+}
+
+.romanNumerals > td {
+  background: #00a;
+}
+
+.arabicNumbers > td {
+  background: #aaf;
+}
+
+input {
+  width: 180px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
